@@ -3,6 +3,9 @@ import Navbar from "./components/Navbar";
 import Hero from "./sections/Hero";
 import About from "./sections/About";
 import Technologies from "./sections/Technologies";
+import Experience from "./sections/Experience";
+import Projects from "./sections/Projects";
+import Contact from "./sections/Contact";
 
 function App() {
 	return (
@@ -19,6 +22,9 @@ function App() {
 				<Hero />
 				<About />
 				<Technologies />
+				<Projects />
+				<Experience />
+				<Contact />
 			</div>
 		</div>
 	);
