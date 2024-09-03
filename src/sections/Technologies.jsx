@@ -19,6 +19,7 @@ const Technologies = () => {
 				initial={{ x: -100, opacity: 0 }}
 				whileInView={{ x: 0, opacity: 1 }}
 				transition={{ duration: 0.8, delay: 0.5 }}
+				viewport={{ once: true }}
 				className="flex flex-wrap justify-center items-center gap-4 mt-16 mb-10"
 			>
 				<motion.div

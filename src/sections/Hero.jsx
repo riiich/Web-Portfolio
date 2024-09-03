@@ -30,6 +30,7 @@ const Hero = () => {
 							variants={container(0.5)}
 							initial="hidden"
 							animate="visible"
+							viewport={{ once: true }}
 							className="pb-16 text-6xl font-light tracking-tight lg:mt-16 lg:text-8xl"
 						>
 							Rich Ho
@@ -39,6 +40,7 @@ const Hero = () => {
 							variants={container(1)}
 							initial="hidden"
 							animate="visible"
+							viewport={{ once: true }}
 							className="bg-gradient-to-r from-blue-400 via-slate-400 to-red-400 bg-clip-text text-4xl tracking-tight text-transparent"
 						>
 							Developer
@@ -48,7 +50,8 @@ const Hero = () => {
 							variants={container(1.5)}
 							initial="hidden"
 							animate="visible"
-							className="my-2 py-6 max-w-xl font-light"
+							viewport={{ once: true }}
+							className="my-2 py-6 max-w-xl text-lg font-light"
 						>
 							{HERO_CONTENT}
 						</motion.p>
@@ -61,6 +64,7 @@ const Hero = () => {
 							initial={{ x: 100, opacity: 0 }}
 							animate={{ x: 0, opacity: 1 }}
 							transition={{ duration: 1, delay: 1.8 }}
+							viewport={{ once: true }}
 							src={profilePicture}
 							alt="profile_pic"
 							width={400}

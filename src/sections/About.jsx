@@ -11,6 +11,7 @@ const About = () => {
 					initial={{ x: -100, opacity: 0 }}
 					whileInView={{ x: 0, opacity: 1 }}
 					transition={{ duration: 0.5, delay: 0.5 }}
+					viewport={{ once: true }}
 					className="w-full lg:w-1/2 lg:p-8"
 				>
 					<div className="flex justify-center items-center">
@@ -22,6 +23,7 @@ const About = () => {
 					initial={{ x: 100, opacity: 0 }}
 					whileInView={{ x: 0, opacity: 1 }}
 					transition={{ duration: 0.5, delay: 0.5 }}
+					viewport={{ once: true }}
 					className="w-full lg:w-1/2"
 				>
 					<div className="flex justify-center lg:justify-start">
