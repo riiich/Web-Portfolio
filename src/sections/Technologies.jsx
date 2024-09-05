@@ -12,7 +12,7 @@ const iconContainer = (duration) => ({
 
 const Technologies = () => {
 	return (
-		<div className="border-b border-slate-600 pb-4 mt-16 lg:mt-28">
+		<div className="border-b border-slate-600 pb-4 mt-16 lg:mt-28" id="tech">
 			<h2 className="text-center text-4xl font-light">Technologies</h2>
 
 			<motion.div

@@ -1,0 +1,8 @@
+{
+	"compilerOptions": {
+		"target": "ES6", // or whichever version you need
+		"module": "commonjs", // or "esnext", depending on your setup
+		"jsx": "react" // only if you are using React
+	},
+	"exclude": ["node_modules", "**/node_modules/*"]
+}

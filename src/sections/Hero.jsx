@@ -1,6 +1,7 @@
 import { HERO_CONTENT } from "../constants";
 import profilePicture from "../assets/images/myPicture.jpg";
 import { motion } from "framer-motion";
+import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
 
 // can use the same animations for multiple containers now
 const container = (delay) => ({
@@ -22,7 +23,7 @@ const container = (delay) => ({
 
 const Hero = () => {
 	return (
-		<div className="border-b border-slate-600 pb-4 mt-16 lg:mb-28">
+		<div className="border-b border-slate-600 pb-4 mt-16 lg:mb-28" id="/">
 			<div className="flex flex-wrap">
 				<div className="w-full lg:w-1/2">
 					<div className="flex flex-col items-center pl-5 lg:items-start">
@@ -55,10 +56,40 @@ const Hero = () => {
 						>
 							{HERO_CONTENT}
 						</motion.p>
+
+						<motion.div
+							variants={container(2)}
+							initial="hidden"
+							animate="visible"
+							viewport={{ once: true }}
+							className="flex justify-center items-center my-20 text-2xl text-slate-300 gap-10 invisible md:visible"
+						>
+							<a
+								href="https://www.linkedin.com/in/horiich/"
+								target="_blank"
+								className="duration-150 hover:scale-125"
+							>
+								<FaLinkedin />
+							</a>
+							<a
+								href="https://github.com/riiich"
+								target="_blank"
+								className="duration-300 hover:scale-125"
+							>
+								<FaGithub />
+							</a>
+							<a
+								href="https://x.com/riiichdev"
+								target="_blank"
+								className="duration-150 hover:scale-125"
+							>
+								<FaTwitter />
+							</a>
+						</motion.div>
 					</div>
 				</div>
 
-				<div className="w-full lg:w-1/2 lg:p-8 mb-8">
+				{/* <div className="w-full lg:w-1/2 lg:p-8 mb-8">
 					<div className="flex justify-center">
 						<motion.img
 							initial={{ x: 100, opacity: 0 }}
@@ -72,7 +103,7 @@ const Hero = () => {
 							className="rounded-3xl"
 						/>
 					</div>
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);

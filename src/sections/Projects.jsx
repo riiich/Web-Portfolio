@@ -18,7 +18,7 @@ const container = (x) => ({
 
 const Projects = () => {
 	return (
-		<div className="border-b border-slate-600 pb-4 mt-16 lg:mt-28">
+		<div className="border-b border-slate-600 pb-4 mt-16 lg:mt-28" id="projects">
 			<motion.h2
 				initial={{ y: -100, opacity: 0 }}
 				whileInView={{ y: 0, opacity: 1 }}
