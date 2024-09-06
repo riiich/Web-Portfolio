@@ -20,19 +20,21 @@ function App() {
 			</div>
 			<Router>
 				<div>
-					<Navbar />
-					<FloatingNav
-						navItems={[
-							{ name: "Home", link: "#/", icon: "🔗" },
-							{ name: "About", link: "#about", icon: "🔗" },
-							{ name: "Technologies", link: "#tech", icon: "🔗" },
-							{ name: "Projects", link: "#projects", icon: "🔗" },
-							{ name: "Experience", link: "#experience", icon: "🔗" },
-							{ name: "Contact", link: "#contact", icon: "🔗" },
-						]}
-						className={"bg-white text-black px-4 py-2 gap-2"}
-					/>
-					<div className="m-auto px-8">
+					<div className="flex justify-center">
+						<FloatingNav
+							navItems={[
+								{ name: "Home |", link: "#/" },
+								{ name: "About |", link: "#about" },
+								{ name: "Technologies |", link: "#tech" },
+								{ name: "Projects |", link: "#projects" },
+								{ name: "Experience |", link: "#experience" },
+								{ name: "Contact", link: "#contact" },
+							]}
+							className={"bg-white text-black m-8 px-4 py-2 gap-2 z-10 max-sm:hidden"}
+						/>
+						<Navbar />
+					</div>
+					<div className="m-auto px-8 md:px-24">
 						<Hero />
 						<About />
 						<Technologies />

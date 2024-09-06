@@ -23,7 +23,7 @@ const container = (delay) => ({
 
 const Hero = () => {
 	return (
-		<div className="border-b border-slate-600 pb-4 mt-16 lg:mb-28" id="/">
+		<div className="border-b border-slate-600 pb-4 mt-16 lg:mb-28">
 			<div className="flex flex-wrap">
 				<div className="w-full lg:w-1/2">
 					<div className="flex flex-col items-center pl-5 lg:items-start">
@@ -62,7 +62,7 @@ const Hero = () => {
 							initial="hidden"
 							animate="visible"
 							viewport={{ once: true }}
-							className="flex justify-center items-center my-20 text-2xl text-slate-300 gap-10 invisible md:visible"
+							className="flex justify-center items-center my-2 text-2xl text-slate-300 gap-10 invisible md:visible md:my-10"
 						>
 							<a
 								href="https://www.linkedin.com/in/horiich/"
@@ -89,7 +89,7 @@ const Hero = () => {
 					</div>
 				</div>
 
-				{/* <div className="w-full lg:w-1/2 lg:p-8 mb-8">
+				<div className="w-full lg:w-1/2 lg:p-8 mb-8">
 					<div className="flex justify-center">
 						<motion.img
 							initial={{ x: 100, opacity: 0 }}
@@ -103,7 +103,7 @@ const Hero = () => {
 							className="rounded-3xl"
 						/>
 					</div>
-				</div> */}
+				</div>
 			</div>
 		</div>
 	);
