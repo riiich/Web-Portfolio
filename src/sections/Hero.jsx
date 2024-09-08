@@ -1,8 +1,10 @@
-import { HERO_CONTENT } from "../constants";
 import profilePicture from "../assets/images/myPicture.jpg";
+import resumeImg from "../assets/resume/resumeImg.png"
+import { HERO_CONTENT } from "../constants";
 import { motion } from "framer-motion";
 import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
 import Resume from "../components/Resume";
+import AnimatedModal from "../components/AnimatedModal";
 
 // can use the same animations for multiple containers now
 const container = (delay) => ({
@@ -88,9 +90,25 @@ const Hero = () => {
 							</a>
 						</motion.div>
 
-						<div className="mb-10">
+						<motion.div
+							variants={container(2.5)}
+							initial="hidden"
+							animate="visible"
+							viewport={{ once: true }}
+							className="mb-10"
+						>
 							<Resume />
-						</div>
+						</motion.div>
+
+						<motion.div
+							variants={container(3)}
+							initial="hidden"
+							animate="visible"
+							viewport={{ once: true }}
+							className="mb-10"
+						>
+							<AnimatedModal content={resumeImg} />
+						</motion.div>
 					</div>
 				</div>
 
