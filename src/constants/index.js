@@ -1,3 +1,5 @@
+import aboutImg from "../assets/images/aboutPlaceholder.png";
+
 export const HERO_CONTENT =
 	"Write an about me, specifically about relevant skills and experiences. Talk about what I want to reach for my career.";
 
@@ -21,7 +23,7 @@ export const PROJECTS = [
 			"yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap",
 		timeFrame: "x - y",
 		technologies: ["tech1", "tech2", "tech3", "tech4", "tech5", "tech6"],
-		image: "../assets/images/aboutPlaceholder.png",
+		image: aboutImg,
 		link: "",
 		githubLink: "https://github.com/riiich",
 	},
@@ -35,7 +37,7 @@ export const PROJECTS = [
 			"yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap",
 		timeFrame: "x - y",
 		technologies: ["tech1", "tech2", "tech3"],
-		image: "/src/assets/images/sexy.png",
+		image: aboutImg,
 		link: "",
 		githubLink: "https://github.com/riiich",
 	},
@@ -49,7 +51,7 @@ export const PROJECTS = [
 			"yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap",
 		timeFrame: "x - y",
 		technologies: ["tech1", "tech2", "tech3"],
-		image: "/src/assets/images/sexy.png",
+		image: aboutImg,
 		link: "",
 		githubLink: "https://github.com/riiich",
 	},
