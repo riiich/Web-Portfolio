@@ -3,7 +3,7 @@ import FloatingNavbarContent from "./FloatingNavbarContent";
 
 const Navbar = () => {
 	return (
-		<nav className="sticky top-0 z-10 flex justify-between items-center border-b-2 bg-green-950 w-screen py-8 border-b-slate-50" id="/">
+		<nav className="top-0 z-10 flex justify-between items-center border-b-2 bg-green-950 w-screen py-8 border-b-slate-50" id="/">
 			<div className="font-mono font-extrabold text-4xl text-white m-auto">
 				<a href="/">RH</a>
 			</div>
