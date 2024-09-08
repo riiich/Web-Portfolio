@@ -89,7 +89,7 @@ const Hero = () => {
 					</div>
 				</div>
 
-				{/* <div className="w-full lg:w-1/2 lg:p-8 mb-8">
+				<div className="w-full lg:w-1/2 lg:p-8 mb-8">
 					<div className="flex justify-center">
 						<motion.img
 							initial={{ x: 100, opacity: 0 }}
@@ -103,7 +103,7 @@ const Hero = () => {
 							className="rounded-3xl"
 						/>
 					</div>
-				</div> */}
+				</div>
 			</div>
 		</div>
 	);
