@@ -2,6 +2,8 @@ import { RiReactjsLine, RiTailwindCssFill, RiJavascriptFill } from "react-icons/
 import { SiNodedotjs, SiMongodb, SiNextdotjs, SiTypescript } from "react-icons/si";
 import { motion } from "framer-motion";
 import mysqlLogo from "../assets/images/mysql.png";
+import javaLogo from "../assets/images/java.png";
+import pythonLogo from "../assets/images/python.png";
 
 const iconContainer = (duration) => ({
 	iconHidden: { y: -10 },
@@ -127,7 +129,7 @@ const Technologies = () => {
 				>
 					<span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
 					<div className="inline-flex h-full w-full items-center justify-center rounded-xl bg-gray-950 px-3 py-1 text-sm font-medium text-gray-50 backdrop-blur-3xl">
-						<img src="../assets/images/java.png" alt="java" width={40} height={40} />
+						<img src={javaLogo} alt="java" width={40} height={40} />
 					</div>
 				</motion.div>
 
@@ -139,7 +141,7 @@ const Technologies = () => {
 				>
 					<span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
 					<div className="inline-flex h-full w-full items-center justify-center rounded-xl bg-gray-950 px-3 py-1 text-sm font-medium text-gray-50 backdrop-blur-3xl">
-						<img src="../assets/images/python.png" alt="python" width={40} height={40} />
+						<img src={pythonLogo} alt="python" width={40} height={40} />
 					</div>
 				</motion.div>
 			</motion.div>

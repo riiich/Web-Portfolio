@@ -21,7 +21,7 @@ export const PROJECTS = [
 			"yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap",
 		timeFrame: "x - y",
 		technologies: ["tech1", "tech2", "tech3", "tech4", "tech5", "tech6"],
-		image: "/src/assets/images/sexy.png",
+		image: "../assets/images/aboutPlaceholder.png",
 		link: "",
 		githubLink: "https://github.com/riiich",
 	},

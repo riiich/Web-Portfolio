@@ -1,5 +1,6 @@
 import { ABOUT_ME_CONTENT } from "../constants";
 import { motion } from "framer-motion";
+import aboutImg from "../assets/images/aboutPlaceholder.png";
 
 const About = () => {
 	return (
@@ -15,7 +16,7 @@ const About = () => {
 					className="w-full lg:w-1/2 lg:p-8"
 				>
 					<div className="flex justify-center items-center">
-						<img src="/src/assets/images/sexy.png" alt="logo" className="rounded-3xl" />
+						<img src={aboutImg} alt="logo" className="rounded-3xl" />
 					</div>
 				</motion.div>
 
