@@ -5,6 +5,7 @@ import aboutImg from "../assets/images/aboutPlaceholder.png";
 const About = () => {
 	return (
 		<div className="border-b border-slate-600 pb-4 mt-16 lg:mt-28" id="about">
+
 			<h2 className="text-center text-4xl font-light m-10">About Me</h2>
 
 			<div className="flex flex-wrap">

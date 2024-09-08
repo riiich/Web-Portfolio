@@ -2,6 +2,7 @@ import { HERO_CONTENT } from "../constants";
 import profilePicture from "../assets/images/myPicture.jpg";
 import { motion } from "framer-motion";
 import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
+import Resume from "../components/Resume";
 
 // can use the same animations for multiple containers now
 const container = (delay) => ({
@@ -86,6 +87,10 @@ const Hero = () => {
 								<FaTwitter />
 							</a>
 						</motion.div>
+
+						<div className="mb-10">
+							<Resume />
+						</div>
 					</div>
 				</div>
 

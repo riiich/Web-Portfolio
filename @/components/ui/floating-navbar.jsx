@@ -1,7 +1,7 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
 import { cn } from "../../../src/utils/cn";
-import { Link } from "react-router-dom";
 
 export const FloatingNav = ({ navItems, className }) => {
 	const { scrollYProgress } = useScroll();
@@ -36,10 +36,10 @@ export const FloatingNav = ({ navItems, className }) => {
 						// to={navItem.link}
 						href={navItem.link}
 						className={cn(
-							"relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
+							"relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500 "
 						)}
 					>
-						<span className="block sm:hidden">{navItem.name}</span>
+						<span className="block hover:text-green-400 sm:hidden">{navItem.name}</span>
 						{/* <span className="hidden sm:block text-sm">{navItem.name}</span> */}
 					</a>
 				))}
