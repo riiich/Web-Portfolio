@@ -16,12 +16,20 @@ const iconContainer = (duration) => ({
 const Technologies = () => {
 	return (
 		<div className="border-b border-slate-600 pb-4 mt-16 lg:mt-28" id="tech">
-			<h2 className="text-center text-4xl font-light">Technologies</h2>
+			<motion.h2
+				initial={{ y: -100, opacity: 0 }}
+				whileInView={{ y: 0, opacity: 1 }}
+				transition={{ delay: 0.5, duration: 0.5 }}
+				viewport={{ once: true }}
+				className="text-center text-4xl font-light"
+			>
+				Technologies
+			</motion.h2>
 
 			<motion.div
 				initial={{ x: -100, opacity: 0 }}
 				whileInView={{ x: 0, opacity: 1 }}
-				transition={{ duration: 0.8, delay: 0.5 }}
+				transition={{ duration: 0.8, delay: 0.8 }}
 				viewport={{ once: true }}
 				className="flex flex-wrap justify-center items-center gap-4 mt-16 mb-10"
 			>

@@ -19,8 +19,8 @@ function App() {
 							bg-[radial-gradient(ellipse_80%_100%_at_50%_-0%,rgba(56,209,69,0.3),rgba(255,255,255,0))]"
 			>
 				{/* <div className="absolute inset-0 -z-10 h-full w-full bg-[radial-gradient(#808080_0.01px,transparent_1px)] [background-size:14px_16px]"></div> */}
-				<ShootingStars  starWidth={10} maxDelay={10000} />
-				<StarsBackground starDensity={0.0005} twinkleProbability={0.9} minTwinkleSpeed={0.6} />
+				<ShootingStars  starWidth={5} starHeight={5} maxDelay={10000} starColor="#47bffd" trailColor="#ff4500" />
+				<StarsBackground starDensity={0.0005} twinkleProbability={0.9} minTwinkleSpeed={0.7} />
 			</div>
 
 			<Router>

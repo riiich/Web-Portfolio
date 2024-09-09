@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 "use client";;
 import { cn } from "../../../src/utils/cn";
 import { AnimatePresence, motion } from "framer-motion";
