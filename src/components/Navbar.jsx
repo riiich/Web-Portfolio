@@ -4,9 +4,9 @@ import FloatingNavbarContent from "./FloatingNavbarContent";
 const Navbar = () => {
 	return (
 			<nav className="flex justify-between items-center w-screen p-8  border-b-slate-50" id="/">
-				<a href="/" className="font-mono font-extrabold text-4xl text-white m-auto">
+				<h1 className="font-mono font-extrabold text-4xl text-white m-auto">
 					RH
-				</a>
+				</h1>
 
 				<div className="text-lg gap-2 mx-auto hidden md:block">
 					<FloatingNavbarContent />

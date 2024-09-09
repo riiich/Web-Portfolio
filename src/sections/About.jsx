@@ -8,7 +8,7 @@ const About = () => {
 			<motion.h2
 				initial={{ y: -100, opacity: 0 }}
 				whileInView={{ y: 0, opacity: 1 }}
-				transition={{ delay: 0.5, duration: 0.5 }}
+				transition={{ delay: 0.4, duration: 0.4 }}
 				viewport={{ once: true }}
 				className="text-center text-4xl font-light m-10"
 			>
@@ -19,7 +19,7 @@ const About = () => {
 				<motion.div
 					initial={{ x: -100, opacity: 0 }}
 					whileInView={{ x: 0, opacity: 1 }}
-					transition={{ duration: 0.8, delay: 0.8 }}
+					transition={{ duration: 0.6, delay: 0.6 }}
 					viewport={{ once: true }}
 					className="w-full lg:w-1/2 lg:p-8"
 				>
@@ -31,12 +31,12 @@ const About = () => {
 				<motion.div
 					initial={{ x: 100, opacity: 0 }}
 					whileInView={{ x: 0, opacity: 1 }}
-					transition={{ duration: 0.8, delay: 0.8 }}
+					transition={{ duration: 0.6, delay: 0.6 }}
 					viewport={{ once: true }}
 					className="w-full lg:w-1/2"
 				>
 					<div className="flex justify-center lg:justify-start">
-						<p className="my-2 py-8 max-w-xl">{ABOUT_ME_CONTENT}</p>
+						<p className="my-2 py-8 max-w-xl text-lg font-light">{ABOUT_ME_CONTENT}</p>
 					</div>
 				</motion.div>
 			</div>
