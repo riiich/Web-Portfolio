@@ -1,5 +1,5 @@
 import aboutImg from "../assets/images/aboutPlaceholder.png";
-import moontrekImg from "../assets/images/project-images/moontrek.jpg";
+import moontrekImg from "../assets/images/project-images/moontrek2.jpg";
 import mymusicwrapImg from "../assets/images/project-images/mymusicwrap.png";
 import eventTracerImg from "../assets/images/project-images/eventTracer.png";
 
