@@ -43,8 +43,8 @@ const Projects = () => {
 								src={`${project.image}`}
 								alt={`project_${project.id}`}
 								width={250}
-								height={250}
-								className="rounded-lg"
+								height={400}
+								className="rounded-lg min-h-60 min-w-72"
 							/>
 						</motion.div>
 					</div>
@@ -58,11 +58,13 @@ const Projects = () => {
 					>
 						<h4 className="mb-2 text-2xl font-semibold">
 							{project.title} &nbsp;&nbsp;{" "}
-							<span className="text-xl text-purple-500 duration-300 hover:text-purple-400">
-								<a href={project.githubLink} target="_blank">
-									Link
-								</a>
-							</span>
+							{project.githubLink && (
+								<span className="text-xl text-purple-500 duration-300 hover:text-purple-400">
+									<a href={project.githubLink} target="_blank">
+										Link
+									</a>
+								</span>
+							)}
 						</h4>
 
 						<p className="text-slate-200 font-light">{project.description}</p>

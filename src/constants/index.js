@@ -1,4 +1,7 @@
 import aboutImg from "../assets/images/aboutPlaceholder.png";
+import moontrekImg from "../assets/images/project-images/moontrek.jpg";
+import mymusicwrapImg from "../assets/images/project-images/mymusicwrap.png";
+import eventTracerImg from "../assets/images/project-images/eventTracer.png";
 
 export const HERO_CONTENT =
 	"Write an about me, specifically about relevant skills and experiences. Talk about what I want to reach for my career.";
@@ -26,8 +29,8 @@ export const PROJECTS = [
 			"yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap " +
 			"yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap",
 		timeFrame: "x - y",
-		technologies: ["Next.js", "MongoDB", "TailwindCSS", "Clerk", "Stripe", "shadcn"],
-		image: aboutImg,
+		technologies: ["Next.js", "MongoDB", "TailwindCSS", "Clerk", "Stripe", "shadcn", "uploadthing"],
+		image: eventTracerImg,
 		link: "https://event-tracer.vercel.app/",
 		githubLink: "https://github.com/riiich/EventTracer",
 	},
@@ -58,7 +61,7 @@ export const PROJECTS = [
 			"yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap",
 		timeFrame: "x - y",
 		technologies: ["React.js", "Express.js", "MongoDB"],
-		image: aboutImg,
+		image: mymusicwrapImg,
 		link: "https://my-music-wrap.vercel.app/",
 		githubLink: "https://github.com/riiich/MyMusicWrap",
 	},
@@ -66,15 +69,15 @@ export const PROJECTS = [
 		id: 4,
 		title: "MoonTrek NASA JPL (Senior Capstone)",
 		description:
-			"Project 3 description... a very cool project indeed. Now it's time to yap yap yap yap yap yap yap yap yap yap yap yap yap yap " +
+			"Project 4 description... a very cool project indeed. Now it's time to yap yap yap yap yap yap yap yap yap yap yap yap yap yap " +
 			"yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap " +
 			"yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap " +
 			"yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap",
 		timeFrame: "x - y",
 		technologies: ["Vue.js", "MySQL", "tech3"],
-		image: aboutImg,
+		image: moontrekImg,
 		link: null,
-		githubLink: "https://github.com/riiich",
+		githubLink: null,
 	},
 ];
 
