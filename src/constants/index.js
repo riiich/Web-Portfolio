@@ -4,14 +4,15 @@ import mymusicwrapImg from "../assets/images/project-images/mymusicwrap.png";
 import eventTracerImg from "../assets/images/project-images/eventTracer.png";
 
 export const HERO_CONTENT =
-	"Write an about me, specifically about relevant skills and experiences. Talk about what I want to reach for my career.";
+	`I have a strong passion for building applications that I find interesting and fun. This is my preferred tech stack: ` +
+	"Front-end: React.js, TailwindCSS, and other UI component libraries. " +
+	"Back-end: Node.js/Express.js, Spring Boot, MySQL";
 
 export const ABOUT_ME_CONTENT =
 	"Hi, my name is Rich, and I graduated with a Bachelor's of Science in Computer Science from California State University, Los Angeles (CSULA). " +
-	"I started my programming journey from my first ever CS course, and I've been loving it ever since. Till this day, I'm still fascinated with " + 
-	"what can be done with the technologies that are widely available to us today. My first spark in interest was through video games. I've always " + 
-	"wondered how we were able to interact with the games through the press of some keys or switches on a keyboard or controller, and I'm glad I " + 
-	"was curious enough and decided to dive a little deeper by going into Computer Science. ";
+	"I started my programming journey from my first ever CS course, and I've been loving it ever since. Till this day, I'm still fascinated with " +
+	"what can be done with the technologies that are widely available to us today. I love it because it's like solving a puzzle, except there are " +
+	"a million different ways to solve it. Personally, I love building projects that I'm passionate about and will continue doing so in the foreseeable future.";
 
 export const TECHNOLOGIES = [];
 
