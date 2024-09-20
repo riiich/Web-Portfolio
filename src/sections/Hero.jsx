@@ -1,5 +1,5 @@
 import profilePicture from "../assets/images/myPicture.jpg";
-import resumeImg from "../assets/resume/resumeImg.png"
+import resumeImg from "../assets/resume/resumeImg.png";
 import { HERO_CONTENT } from "../constants";
 import { motion } from "framer-motion";
 import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
@@ -28,7 +28,7 @@ const Hero = () => {
 	return (
 		<div className="border-b border-slate-600 pb-4 mt-16 lg:mb-28">
 			<div className="flex flex-wrap">
-				<div className="w-full lg:w-1/2">
+				<div className="w-full lg:w-3/5">
 					<div className="flex flex-col items-center pl-5 lg:items-start">
 						<motion.h1
 							variants={container(0.5)}
@@ -57,7 +57,15 @@ const Hero = () => {
 							viewport={{ once: true }}
 							className="my-2 py-6 max-w-xl text-lg font-light"
 						>
-							{HERO_CONTENT}
+							{HERO_CONTENT.firstSentence}
+							<br />
+							<br />
+							<span className="underline ">Preferred tech stack</span>
+							<br />
+							<span className="font-semibold">Front-end:</span>
+							{HERO_CONTENT.frontEnd}
+							<br />
+							<span className="font-semibold">Back-end:</span> {HERO_CONTENT.backEnd}
 						</motion.p>
 
 						<motion.div
@@ -112,7 +120,7 @@ const Hero = () => {
 					</div>
 				</div>
 
-				<div className="w-full lg:w-1/2 lg:p-8 mb-8">
+				<div className="w-full lg:w-2/5	 lg:p-8 mb-8">
 					<div className="flex justify-center">
 						<motion.img
 							initial={{ x: 100, opacity: 0 }}

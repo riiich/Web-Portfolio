@@ -3,10 +3,12 @@ import moontrekImg from "../assets/images/project-images/moontrek2.jpg";
 import mymusicwrapImg from "../assets/images/project-images/mymusicwrap.png";
 import eventTracerImg from "../assets/images/project-images/eventTracer.png";
 
-export const HERO_CONTENT =
-	`I have a strong passion for building applications that I find interesting and fun. This is my preferred tech stack: ` +
-	"Front-end: React.js, TailwindCSS, and other UI component libraries. " +
-	"Back-end: Node.js/Express.js, Spring Boot, MySQL";
+export const HERO_CONTENT = {
+	firstSentence: "I have a strong passion for building applications that I find interesting and fun.",
+	frontEnd:
+		"Front-end: React.js, TailwindCSS, and other UI component libraries.",
+	backEnd: "Node.js/Express.js or Spring Boot, MySQL",
+};
 
 export const ABOUT_ME_CONTENT =
 	"Hi, my name is Rich, and I graduated with a Bachelor's of Science in Computer Science from California State University, Los Angeles (CSULA). " +
