@@ -60,12 +60,17 @@ const Hero = () => {
 							{HERO_CONTENT.firstSentence}
 							<br />
 							<br />
-							<span className="underline ">Preferred tech stack</span>
+							<span className="underline-offset-2">
+								Preferred tech stack:
+							</span>
 							<br />
 							<span className="font-semibold">Front-end:</span>
 							{HERO_CONTENT.frontEnd}
 							<br />
-							<span className="font-semibold">Back-end:</span> {HERO_CONTENT.backEnd}
+							<span className="font-semibold">
+								Back-end:
+							</span>{" "}
+							{HERO_CONTENT.backEnd}
 						</motion.p>
 
 						<motion.div
