@@ -18,7 +18,8 @@ export const ABOUT_ME_CONTENT =
 	"it's like solving a puzzle, except there are a million different ways to solve it. Personally, " +
 	"I love building projects that I'm passionate about and will continue doing so in the foreseeable future.";
 
-export const TECHNOLOGIES = [];
+export const TECHNOLOGIES = ["JavaScript", "React.js", "Next.js", "Node.js/Express.js", "Java", "Spring Boot", 
+							"Python", "MySQL", "PostgreSQL", "MongoDB", "Git" ];
 
 export const PROJECTS = [
 	{
@@ -27,9 +28,8 @@ export const PROJECTS = [
 		description:
 			"A platform for people to create and host events. Browse and purchase tickets to " +
 			"publicly hosted events. " +
-			"",
 
-		timeFrame: "x - y",
+		timeFrame: "June 2024 - August 2024",
 		technologies: [
 			"Next.js",
 			"MongoDB",
@@ -50,7 +50,7 @@ export const PROJECTS = [
 			"A Reddit clone that offers the same functionality as the actual Reddit website. Users are able to create " +
 			"a subreddit, create posts, comment on posts, and like posts. Users are also able to view the posts " +
 			"that they commented on and liked.",
-		timeFrame: "x - y",
+		timeFrame: "Dec 2023 - February 2024",
 		technologies: ["React.js", "Spring Boot", "MySQL", "TailwindCSS"],
 		image: aboutImg,
 		link: null,
@@ -66,7 +66,7 @@ export const PROJECTS = [
 			"View your personalized Spotify data. Displays your top artists, tracks, and recommended songs based on " +
 			`your chosen time frame (past month, past 6 months, past couple of years). Add recommended songs based ` +
 			"on your top tracks during a time frame in your existing playlists. ",
-		timeFrame: "x - y",
+		timeFrame: "November 2023 - February 2024",
 		technologies: ["React.js", "Express.js", "MongoDB"],
 		image: mymusicwrapImg,
 		link: "https://my-music-wrap.vercel.app/",
@@ -80,7 +80,7 @@ export const PROJECTS = [
 			"receives an image that the user uploads from their own device and returns their image with information such " +
 			"details of craters, space missions, and lunar marias overlaid over their image. " +
 			"Presented our project discoveries and work completed to an audience of other students and professionals.",
-		timeFrame: "Aug 2022 - May 2023",
+		timeFrame: "August 2022 - May 2023",
 		technologies: ["Vue.js", "Python", "Express.js", "MySQL"],
 		image: moontrekImg,
 		link: null,
@@ -94,8 +94,10 @@ export const EXPERIENCES = [
 		placeOfEmployment: "Hooshik Cafe",
 		position: "Barista/Manager",
 		dateEmployed: "02/2019 - 03/2020",
-		description:
-			"Made and served Bingsu (Korean shaved-ice) to customers. Trained and managed 3 new team members to make " + 
-			"Bingsu and how to navigate and use the cashier. ",
+		description: [
+			"Made and served Bingsu (Korean shaved-ice) to customers.",
+			"Trained and managed 3 new team members to make Bingsu and how to navigate and use the cashier.",
+			""
+		],
 	},
 ];
