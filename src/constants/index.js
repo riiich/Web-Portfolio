@@ -2,6 +2,7 @@ import aboutImg from "../assets/images/aboutPlaceholder.png";
 import moontrekImg from "../assets/images/project-images/moontrek2.jpg";
 import mymusicwrapImg from "../assets/images/project-images/mymusicwrap.png";
 import eventTracerImg from "../assets/images/project-images/eventTracer.png";
+import redditcloneImg from "../assets/images/project-images/reddit-clone.png";
 
 export const HERO_CONTENT = {
 	firstSentence:
@@ -63,7 +64,7 @@ export const PROJECTS = [
 			"that they commented on and liked.",
 		timeFrame: "Dec 2023 - February 2024",
 		technologies: ["React.js", "Spring Boot", "MySQL", "TailwindCSS"],
-		image: aboutImg,
+		image: redditcloneImg,
 		link: null,
 		githubLink: {
 			frontEnd: "https://github.com/riiich/reddit-clone-front-end",
