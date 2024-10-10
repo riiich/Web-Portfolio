@@ -15,7 +15,11 @@ const EmailForm = () => {
 		e.preventDefault(); // prevent from refreshing browser
 
 		try {
-			if (!emailContent.email || !emailContent.name || !emailContent.message) {
+			if (
+				!emailContent.email ||
+				!emailContent.name ||
+				!emailContent.message
+			) {
 				toast.error("Please fill in the missing field!");
 				return;
 			}
@@ -55,56 +59,68 @@ const EmailForm = () => {
 	};
 
 	return (
-		<form ref={form} onSubmit={submitEmail} className="flex flex-col text-xl my-16 lg:mt-20 ">
-			<label className="flex text-2xl text-white font-semibold my-1">Your name:</label>
-			<input
-				type="text"
-				id="user_name"
-				name="user_name"
-				onChange={handleName}
-				placeholder="Enter your name..."
-				className="rounded-lg bg-green-200 text-xl text-black font-medium p-2 mb-5"
-			/>
+		<div>
+			<form
+				ref={form}
+				onSubmit={submitEmail}
+				className="flex flex-col text-xl my-16 lg:mt-20"
+			>
+				<label className="flex text-2xl text-white font-semibold my-1">
+					Your name:
+				</label>
+				<input
+					type="text"
+					id="user_name"
+					name="user_name"
+					onChange={handleName}
+					placeholder="Enter your name..."
+					className="rounded-lg bg-green-200 text-xl text-black font-medium p-2 mb-5"
+				/>
 
-			<label className="flex text-2xl text-white font-semibold my-1">Your email:</label>
-			<input
-				type="email"
-				id="user_email"
-				name="user_email"
-				onChange={handleEmail}
-				placeholder="Enter your email..."
-				className="rounded-lg bg-green-200 text-xl text-black font-medium p-2 mb-5"
-			/>
+				<label className="flex text-2xl text-white font-semibold my-1">
+					Your email:
+				</label>
+				<input
+					type="email"
+					id="user_email"
+					name="user_email"
+					onChange={handleEmail}
+					placeholder="Enter your email..."
+					className="rounded-lg bg-green-200 text-xl text-black font-medium p-2 mb-5"
+				/>
 
-			<label className="flex text-2xl text-white font-semibold my-1">Type your message here:</label>
-			<textarea
-				type="text"
-				id="message"
-				name="message"
-				onChange={handleMessage}
-				placeholder="Enter your email..."
-				className="rounded-lg bg-green-200 text-xl text-black font-medium p-3 mb-5 lg:w-96"
-			/>
+				<label className="flex text-2xl text-white font-semibold my-1">
+					Type your message here:
+				</label>
+				<textarea
+					type="text"
+					id="message"
+					name="message"
+					onChange={handleMessage}
+					placeholder="Enter your email..."
+					className="rounded-lg bg-green-200 text-xl text-black font-medium p-3 mb-5 lg:w-96"
+				/>
 
-			<input
-				type="submit"
-				value="Submit"
-				className="border-2 w-fit p-3 rounded-xl bg-green-800 text-slate-200 duration-75 hover:cursor-pointer active:scale-90"
-			/>
+				<input
+					type="submit"
+					value="Submit"
+					className="border-2 w-fit p-3 rounded-xl bg-green-800 text-slate-200 duration-75 hover:cursor-pointer active:scale-90"
+				/>
 
-			<ToastContainer
-				position="bottom-right"
-				autoClose={3000}
-				hideProgressBar
-				newestOnTop={false}
-				closeOnClick
-				rtl={false}
-				pauseOnFocusLoss
-				draggable
-				theme="light"
-				transition:Bounce
-			/>
-		</form>
+				<ToastContainer
+					position="top-center"
+					autoClose={3000}
+					hideProgressBar
+					newestOnTop={false}
+					closeOnClick
+					rtl={false}
+					pauseOnFocusLoss
+					draggable
+					theme="light"
+					transition:Bounce
+				/>
+			</form>
+		</div>
 	);
 };
 
