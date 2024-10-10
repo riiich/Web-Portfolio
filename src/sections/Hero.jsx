@@ -64,7 +64,9 @@ const Hero = () => {
 								Preferred tech stack:
 							</span>
 							<br />
-							<span className="font-semibold">Front-end:</span>
+							<span className="font-semibold">
+								Front-end:
+							</span>{" "}
 							{HERO_CONTENT.frontEnd}
 							<br />
 							<span className="font-semibold">

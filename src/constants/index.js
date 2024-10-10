@@ -16,10 +16,22 @@ export const ABOUT_ME_CONTENT =
 	"first ever CS course, and I've been loving it ever since. Till this day, I'm still fascinated with " +
 	"what can be done with the technologies that are widely available to us today. I love it because " +
 	"it's like solving a puzzle, except there are a million different ways to solve it. Personally, " +
-	"I love building projects that I'm passionate about and will continue doing so in the foreseeable future.";
+	"I love building projects that I'm passionate about and will continue doing so in the foreseeable future " +
+	"to hopefully share with you all here.";
 
-export const TECHNOLOGIES = ["JavaScript", "React.js", "Next.js", "Node.js/Express.js", "Java", "Spring Boot", 
-							"Python", "MySQL", "PostgreSQL", "MongoDB", "Git" ];
+export const TECHNOLOGIES = [
+	"JavaScript",
+	"React.js",
+	"Next.js",
+	"Node.js/Express.js",
+	"Java",
+	"Spring Boot",
+	"Python",
+	"MySQL",
+	"PostgreSQL",
+	"MongoDB",
+	"Git",
+];
 
 export const PROJECTS = [
 	{
@@ -27,8 +39,7 @@ export const PROJECTS = [
 		title: "Event Tracer",
 		description:
 			"A platform for people to create and host events. Browse and purchase tickets to " +
-			"publicly hosted events. " +
-
+			"publicly hosted events. ",
 		timeFrame: "June 2024 - August 2024",
 		technologies: [
 			"Next.js",
@@ -91,13 +102,22 @@ export const PROJECTS = [
 export const EXPERIENCES = [
 	{
 		id: 1,
+		placeOfEmployment: "Intercare Holdings Insurance",
+		position: "Admin Support Clerk",
+		dateEmployed: "09/2024 - Present",
+		description: [
+			"Digitized and organized physical copies of historical files, ensuring accurate categorization and integration into the claims database.",
+			"Tracked the progress of scanned files using Excel, maintaining the latest records for efficient claims processing by adjusters."],
+	},
+	{
+		id: 2,
 		placeOfEmployment: "Hooshik Cafe",
 		position: "Barista/Manager",
 		dateEmployed: "02/2019 - 03/2020",
 		description: [
 			"Made and served Bingsu (Korean shaved-ice) to customers.",
 			"Trained and managed 3 new team members to make Bingsu and how to navigate and use the cashier.",
-			""
+			"",
 		],
 	},
 ];

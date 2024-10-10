@@ -63,7 +63,7 @@ const Experience = () => {
 									{experience.position}
 								</span>
 							</h4>
-							<ul>
+							<ol>
 								{experience.description.map((desc, i) => (
 									<li
 										className="font-light text-slate-200"
@@ -72,7 +72,7 @@ const Experience = () => {
 										{desc}
 									</li>
 								))}
-							</ul>
+							</ol>
 						</motion.div>
 					</div>
 				))}
