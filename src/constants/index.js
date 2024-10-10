@@ -41,7 +41,15 @@ export const PROJECTS = [
 			"A platform for people to create and host events. Browse and purchase tickets to " +
 			"publicly hosted events. ",
 		timeFrame: "June 2024 - August 2024",
-		technologies: ["Next.js", "MongoDB", "TailwindCSS", "Clerk", "Stripe", "shadcn", "uploadthing"],
+		technologies: [
+			"Next.js",
+			"MongoDB",
+			"TailwindCSS",
+			"Clerk",
+			"Stripe",
+			"shadcn",
+			"uploadthing",
+		],
 		image: eventTracerImg,
 		link: "https://event-tracer.vercel.app/",
 		githubLink: "https://github.com/riiich/EventTracer",
@@ -99,8 +107,7 @@ export const EXPERIENCES = [
 		dateEmployed: "09/2024 - Present",
 		description: [
 			"Digitized and organized physical copies of historical files, ensuring accurate categorization and integration into the claims database.",
-			"Tracked the progress of scanned files using Excel, maintaining the latest records for efficient claims processing by adjusters.",
-		],
+			"Tracked the progress of scanned files using Excel, maintaining the latest records for efficient claims processing by adjusters."],
 	},
 	{
 		id: 2,

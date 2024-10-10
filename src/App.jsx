@@ -11,7 +11,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { ShootingStars } from "../@/components/ui/shooting-stars";
 import { StarsBackground } from "../@/components/ui/stars-background";
 import { useEffect, useState } from "react";
-import { formatDateTime } from "./utils/utils";
+// import { formatDateTime } from "./utils/utils";
 
 function App() {
 	const [time, setTime] = useState(new Date());
