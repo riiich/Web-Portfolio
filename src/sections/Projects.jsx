@@ -48,7 +48,7 @@ const Projects = () => {
 							<img
 								src={`${project.image}`}
 								alt={`project_${project.id}`}
-								width={250}
+								width={400}
 								height={400}
 								className="rounded-lg min-h-60 min-w-72"
 							/>
