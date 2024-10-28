@@ -1,6 +1,5 @@
 import { ABOUT_ME_CONTENT } from "../constants";
 import { motion } from "framer-motion";
-import aboutImg from "../assets/images/aboutPlaceholder.png";
 
 const About = () => {
 	return (
@@ -15,19 +14,7 @@ const About = () => {
 				About Me
 			</motion.h2>
 
-			<div className="flex flex-wrap">
-				<motion.div
-					initial={{ x: -100, opacity: 0 }}
-					whileInView={{ x: 0, opacity: 1 }}
-					transition={{ duration: 0.6, delay: 0.6 }}
-					viewport={{ once: true }}
-					className="w-full lg:w-1/2 lg:p-8"
-				>
-					<div className="flex justify-center items-center">
-						<img src={aboutImg} alt="logo" className="rounded-3xl" />
-					</div>
-				</motion.div>
-
+			<div className="flex justify-center">
 				<motion.div
 					initial={{ x: 100, opacity: 0 }}
 					whileInView={{ x: 0, opacity: 1 }}
@@ -35,8 +22,12 @@ const About = () => {
 					viewport={{ once: true }}
 					className="w-full lg:w-1/2"
 				>
-					<div className="flex justify-center lg:justify-start">
-						<p className="my-2 py-8 max-w-xl text-lg font-light">{ABOUT_ME_CONTENT}</p>
+					<div className="relative flex justify-center">
+						<div className="absolute inset-0 bg-slate-600/20 backdrop-blur-0 rounded-lg"></div>
+						<div className="relative z-10 text-white p-0">
+							<div className="absolute inset-0 bg-cover bg-center filter blur-md"></div>
+							<p className="z-20 my-2 py-8 max-w-xl text-xl font-light">{ABOUT_ME_CONTENT}</p>
+						</div>
 					</div>
 				</motion.div>
 			</div>
